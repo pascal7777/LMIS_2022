@@ -1,0 +1,41 @@
+<%- include('../partials/head')%>
+
+
+    <%- include('../partials/navbar')%>
+
+        <div class="container">
+
+
+            <h1>Division: <%=site.division%>
+            </h1>
+            <br> <br> <br><br><br> <br><br><br>
+            <h1>District: <%=site.district%>
+            </h1>
+            <br> <br> <br><br><br> <br><br><br>
+            <h1>
+                Upazila: <%=site.upazila%>
+            </h1>
+
+            <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br>
+            <div>
+                <a class="btn btn-primary" href="/sites/<%=site.id%>/edit">Edit this Site
+                </a>
+            </div>
+            <br><br><br>
+            <div>
+
+
+
+
+                <form method="POST" action="/sites/<%=site.id%>?_method=DELETE">
+                    <button type="button" class="btn btn-danger">Delete this Site</button>
+                </form>
+            </div>
+
+
+        </div>
+
+
+        <br>
+
+        <%- include('../partials/footer')%>

@@ -1,0 +1,66 @@
+<%- include('../partials/head')%>
+
+
+    <%- include('../partials/navbar')%>
+
+        <div class="container">
+
+
+
+
+
+            <br>
+            <h1>ADD a SITE </h1>
+
+
+            <form action="/sites" method="POST">
+                <section>
+                    <div class="mb-2"><label class="form-label" for="upazila">Upazila Name</label>
+                        <input class="form-control" type="text" name="upazila" id="upazila" placeholder="">
+                    </div>
+
+                    <div class="mb-2"><label class="form-label" for="district">District Name</label>
+                        <input class="form-control" type="text" name="district" id="district" placeholder="">
+                    </div>
+
+                    <div class="mb-2"><label class="form-label" for="name">Division Name</label>
+                        <input class="form-control" type="text" name="division" id="division" placeholder="">
+                    </div>
+                </section>
+                <br>
+                <button>Submit</button>
+            </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <br>
+
+            <%- include('../partials/footer')%>

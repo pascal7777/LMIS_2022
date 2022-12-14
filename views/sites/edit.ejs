@@ -1,0 +1,68 @@
+<%- include('../partials/head')%>
+
+
+    <%- include('../partials/navbar')%>
+
+        <div class="container">
+
+
+
+
+
+            <br>
+            <h1>Edit a SITE </h1>
+
+
+
+            <form method="POST" action="/sites/<%=site.id%>?_method=PATCH">
+
+                <div class="mb-2"><label class="form-label" for="upazila">Upazila Name</label>
+                    <input class="form-control" type="text" id="upazila" name="upazila" value="<%=site.upazila%>">
+                </div>
+
+                <div class="mb-2"><label class="form-label" for="district">District Name</label>
+                    <input class="form-control" type="text" id="district" name="district" value="<%=site.district%>">
+                </div>
+
+                <div class="mb-2"><label class="form-label" for="division">DivisionName</label>
+                    <input class="form-control" type="text" id="division" name="division" value="<%=site.division%>">
+                </div>
+
+                <br>
+
+                <button class="btn btn-primary">Submit Edits</button>
+            </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <br>
+
+            <%- include('../partials/footer')%>

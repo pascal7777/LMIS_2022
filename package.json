@@ -1,0 +1,17 @@
+{
+  "name": "vlmis",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pascal",
+  "license": "ISC",
+  "description": "demo",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "method-override": "^3.0.0",
+    "uuid": "^9.0.0"
+  }
+}
